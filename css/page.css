@@ -1,0 +1,162 @@
+			#top {
+                width: 1200px;
+                margin: 10px auto;
+            }
+            #logo {
+                width: 291px;
+                height: 69px;
+                background: url(../images/logo.png) no-repeat;
+                float: left;
+                margin-right: 490px;
+            }
+            #tele p {
+                font-size: 20px;
+                font-family: "黑体";
+                line-height: 69px;
+                float: left;
+                margin-right: 15px;
+            }
+            /* 顶部信息结束 */
+            
+            /* 导航开始 */
+            #nav {
+                width: 100%;
+                height: 90px;
+                background: #323333;
+            }
+            #nav ul {
+                width: 1200px;
+                margin: 0 auto;
+                padding-left: 50px;
+            }
+            #nav li {
+                float:left;
+                margin-right:30px;
+            }
+            #nav a {
+                font: 30px '黑体';
+                color: #fff;
+                line-height: 90px;
+                padding-right:20px;
+            }
+            #nav span {
+                display: inline-block;
+                height:90px;
+                padding-left:20px;
+            }
+            #nav a:hover {
+               background:url(../images/nav_havor_right.png) no-repeat right center;
+            }
+            #nav a:hover span {
+                background:url(../images/nav_havor_left.png) no-repeat left center;
+            }
+         /* 导航结束 */  
+         
+        /* 底部信息开始 */
+        #footer{
+            width: 100%;
+            height: 648px;
+            background: url(../images/footer.png) no-repeat center;
+        }
+        #footer_conter{
+            width: 1200px;
+            margin: 100px auto 0;
+        }
+        #footer_left{
+            float: left;
+            margin: 150px 30px 20px 320px;
+        }
+        #footer_left .p{
+            font-size: 24px;
+            font-family: "黑体";
+            padding: 20px 55px 10px;
+            color: #fff;
+            font-weight: bolder;
+        }
+        #footer_left .p1{
+            font-size: 24px;
+            font-family: "黑体";
+            color: #fff;
+            font-weight: bolder;
+        }
+        #footer_right iframe{
+            float: left;
+            width: 573px;
+            height: 303px;
+            margin: 150px 0 0 0;
+        }
+        #footer_conter .p3{
+            font-size: 24px;
+            font-family: "黑体";
+            color: #fff;
+            font-weight: bolder;
+            margin: 10px  0 0 300px;
+            float: left;
+        }
+        #footer_conter span{
+            float: left;
+            font-size: 24px;
+            font-family: "黑体";
+            color: #fff;
+            font-weight: bolder;
+            margin: 10px  0 0 20px;
+        }
+        #footer_conter .p4{
+            float: left;
+            font-size: 24px;
+            font-family: "黑体";
+            color: #fff;
+            font-weight: bolder;
+            margin: 60px 440px 0;
+        }
+        /* 底部信息结束 */
+        
+       /* 网站功能开始 */
+            #web_function {
+                position: fixed;
+                right: 70px;
+                bottom: 100px;
+            }
+            #web_function li:last-child {
+                margin-top: 1px;
+            }
+            #web_function li {
+                overflow: visible;
+                *zoom: 1;
+                position: relative;
+                z-index: 2;
+                width: 120px;
+            }
+            #web_function li img {
+                width: 80px;
+                height: 85px;
+            }
+            #web_function li a {
+                display: block;
+            }
+            #web_function li a:hover {
+                opacity: 0.7;
+            }
+            #web_function ul {
+                position: absolute;
+                left: -100px;
+                top: -1px;
+                display: none;
+            }
+            #web_function ul li {
+                width: 100px;
+                height: 75px;
+                background: rgba(220, 100, 10, 1);
+                float: none;
+                padding-top: 10px;
+            }
+            #web_function ul li p {
+                color: #fff;
+                font-size: 14px;
+                padding-top: 10px;
+                text-align: center;
+            }
+            #web_function li:hover ul {
+                display: block;
+            }
+            /* 网站功能结束 */

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="和璟艺术风口 " />
+        <meta name="description" content="和璟艺术风口 ">
+        <meta name="author" content="王钰,曹媛,蒋丽娟" />
+        <meta name="robots" content="all" />
+        <title>和璟艺术风口</title>
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
+        <script type="text/javascript" src="js/jquery1.42.min.js"></script>
+        <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.3.source.js"></script>
+        <style>
+            /* 顶部信息开始 */
+            #top {
+                width: 1200px;
+                margin: 10px auto;
+            }
+            #logo {
+                width: 291px;
+                height: 69px;
+                background: url(images/logo.png) no-repeat;
+                float: left;
+                margin-right: 490px;
+            }
+            #tele p {
+                font-size: 20px;
+                font-family: "黑体";
+                line-height: 69px;
+                float: left;
+                margin-right: 15px;
+            }
+            /* 顶部信息结束 */
+
+            /* 导航开始 */
+            #nav {
+                width: 100%;
+                height: 90px;
+                background: #323333;
+            }
+            #nav ul {
+                width: 1200px;
+                margin: 0 auto;
+                padding-left: 50px;
+            }
+            #nav li {
+                float: left;
+                margin-right: 30px;
+            }
+            #nav a {
+                font: 30px '黑体';
+                color: #fff;
+                line-height: 90px;
+                padding-right: 20px;
+            }
+            #nav span {
+                display: inline-block;
+                height: 90px;
+                padding-left: 20px;
+            }
+            #nav a:hover {
+                background: url(images/nav_havor_right.png) no-repeat right center;
+            }
+            #nav a:hover span {
+                background: url(images/nav_havor_left.png) no-repeat left center;
+            }
+            #nav .one>a {
+                background: url(images/nav_havor_right.png) no-repeat right center;
+                background: url(images/nav_havor_left.png) no-repeat left center;
+            }
+            /* 导航结束 */
+
+            /* banner开始 */
+            .slideBox {
+                width: 1500px;
+                height: 100%;
+                overflow: hidden;
+                position: relative;
+                border: 1px solid #ddd;
+                margin: 0 auto 0;
+            }
+            .slideBox .hd {
+                height: 15px;
+                overflow: hidden;
+                position: absolute;
+                right: 50%;
+                bottom: 20px;
+                z-index: 1;
+            }
+            .slideBox .hd ul {
+                overflow: hidden;
+                zoom: 1;
+                float: left;
+            }
+            .slideBox .hd ul li {
+                float: left;
+                margin-right: 10px;
+                width: 15px;
+                height: 15px;
+                border-radius: 50px;
+                background: #fff;
+                cursor: pointer;
+            }
+            .slideBox .hd ul li.on {
+                background: #f00;
+                color: #fff;
+            }
+            .slideBox .bd {
+                position: relative;
+                height: 100%;
+                z-index: 0;
+            }
+            .slideBox .bd li {
+                zoom: 1;
+                vertical-align: middle;
+            }
+            .slideBox .bd img {
+                width: 1500px;
+                height: 100%;
+                display: block;
+            }
+            /* banner结束 */
+
+            /* 内容开始 */
+            #about1 {
+                width: 1200px;
+                margin: 50px auto 0;
+            }
+           #about1 .title {
+                width: 380px;
+                height: 49px;
+                border-bottom: #e87036 6px solid;
+                padding: 8px;
+                margin: 0 auto 20px;
+            }
+           #about1  p {
+                font-size: 20px;
+                font-family: "黑体";
+                color: #525050;
+                text-align: center;
+                line-height: 30px;
+            }
+           #about1 .pic {
+                margin: 20px auto 20px;
+            }
+           #about1  .more {
+                width: 180px;
+                height: 56px;
+                background-color: #323333;
+                margin: 0 auto 50px;
+            }
+           #about1  a {
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+                padding: 15px 0 0 60px;
+            }
+            #about1 a:hover {
+                color: #e87036;
+            }
+            /* 关于我们结束 */
+            #one {
+                width: 100%;
+                height: 120px;
+                background: url(images/one.jpg) no-repeat center;
+            }
+            /*最新产品开始*/
+            #about {
+                width: 1200px;
+                margin: 50px auto 0;
+                overflow:hidden;
+            }
+            #about .title {
+                width: 380px;
+                height: 49px;
+                border-bottom: #e87036 6px solid;
+                padding: 8px;
+                margin: 0 auto 20px;
+            }
+            #produce{
+                width: 1100px;
+                margin: 0 auto 0;
+            }
+            #produce1 {
+                float: left;
+                margin-right: 5px;
+            }
+            #center {
+                float: left;
+                margin-right: 5px;
+            }
+            #produce img:hover {
+            	transform:scale(1.2,1.2);
+            }
+            #produce img {
+            	transition:all 0.5s ease-out;
+            }
+            #about .more {
+                width: 180px;
+                height: 56px;
+                background-color: #323333;
+                margin:0 auto 50px;
+            }
+            #about .more p {
+                padding: 15px 0 0 60px;
+            }
+            #about a {
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+            }
+            #about a:hover {
+                color: #e87036;
+            }
+
+            /* 最新产品结束*/
+            #two {
+                width: 100%;
+                height: 120px;
+                background: url(images/two.jpg) no-repeat center;
+            }
+            /* 案例中心开始 */
+            #case_top{
+                width: 100%;
+                height: 80px;
+                background: #c5c5c5;
+            }
+           #case{
+               width: 1200px;
+               margin:0 auto 50px;
+           }
+           #case .picMarquee-left {
+               width: 800px;
+               overflow: hidden;
+               position: relative;
+               margin: auto;
+           }
+          #case .picMarquee-left .bdy {
+               padding: 30px;
+           }
+           .picMarquee-left .bdy ul {
+               overflow: hidden;
+           }
+          #case .picMarquee-left .bdy ul li {
+               float: left;
+               display: inline;
+               overflow: hidden;
+               text-align: center;
+           }
+          #case .picMarquee-left .bdy ul li .title {
+               line-height: 24px;
+               font-size: 20px;
+               font-family: "黑体";
+           }
+          #case .picMarquee-left a:hover {
+               color: #FF6905;
+           }
+           
+           #case1 {
+               width: 1200px;
+               margin: 50px auto 0;
+           }
+           #case1 #title {
+               width: 380px;
+               height: 49px;
+               border-bottom: #e87036 6px solid;
+               padding: 8px;
+               margin: 0 auto 20px;
+           }
+           #case1 .more {
+               width: 180px;
+               height: 56px;
+               background-color: #323333;
+               margin:0 auto 50px;
+           }
+           #case1 .more p {
+               padding: 15px 0 0 60px;
+           }
+           #case1 a {
+               font-size: 24px;
+               font-family: "黑体";
+               color: #fff;
+           }
+           #case1 a:hover {
+               color: #FF6905;
+           }
+           #case2{
+               margin: 0 auto 30px;
+           }
+          #case2 .picMarquee-left {
+                width: 950px;
+                overflow: hidden;
+                position: relative;
+                border: 2px solid #c75d13;
+                margin: 60px auto 0;
+            }
+           #case2 .picMarquee-left .bdy {
+                padding: 20px;
+            }
+           #case2 .picMarquee-left .bdy ul {
+                overflow: hidden;
+                zoom: 1;
+            }
+           #case2 .picMarquee-left .bdy ul li {
+                float: left;
+                display: inline;
+                overflow: hidden;
+                text-align: center;
+            }
+           #case2 .picMarquee-left .bdy ul li .title {
+                line-height: 24px;
+                font-size: 20px;
+                font-family: "黑体";
+                margin: 5px;
+            }
+           #case2 .picMarquee-left .bdy ul li .pic img {
+                width: 290px;
+                height: 225px;
+                display: block;
+                margin-right:10px;
+                padding: 2px;
+                border: 1px solid #333;
+            }
+           #case2 .picMarquee-left .bdy ul li a{
+                 color: #323333;
+             }
+           #case2 .picMarquee-left .bdy ul li a:hover{
+                color: #FF6905;
+            }
+            /* 案例中心结束 */
+            /* 内容结束 */
+
+            /* 底部信息开始 */
+            #footer {
+                width: 100%;
+                height: 648px;
+                background: url(images/footer.png) no-repeat center;
+            }
+            #footer_conter {
+                width: 1200px;
+                margin: 100px auto 0;
+            }
+            #footer_left {
+                float: left;
+                margin: 150px 30px 20px 320px;
+            }
+            #footer_left .p {
+                font-size: 24px;
+                font-family: "黑体";
+                padding: 20px 55px 10px;
+                color: #fff;
+                font-weight: bolder;
+            }
+            #footer_left .p1 {
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+                font-weight: bolder;
+            }
+            #footer_right iframe{
+                float: left;
+                width: 573px;
+                height: 303px;
+                margin: 150px 0 0 0;
+            }
+            #footer_conter .p3 {
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+                font-weight: bolder;
+                margin: 10px 0 0 300px;
+                float: left;
+            }
+            #footer_conter span {
+                float: left;
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+                font-weight: bolder;
+                margin: 10px 0 0 20px;
+            }
+            #footer_conter .p4 {
+                float: left;
+                font-size: 24px;
+                font-family: "黑体";
+                color: #fff;
+                font-weight: bolder;
+                margin: 60px 440px 0;
+            }
+            /* 底部信息结束 */
+
+            /* 网站功能开始 */
+            #web_function {
+                position: fixed;
+                right: 70px;
+                bottom: 100px;
+            }
+            #web_function li:last-child {
+                margin-top: 1px;
+            }
+            #web_function li {
+                overflow: visible;
+                *zoom: 1;
+                position: relative;
+                z-index: 2;
+                width: 120px;
+            }
+            #web_function li img {
+                width: 80px;
+                height: 85px;
+            }
+            #web_function li a {
+                display: block;
+            }
+            #web_function li a:hover {
+                opacity: 0.7;
+            }
+            #web_function ul {
+                position: absolute;
+                left: -100px;
+                top: -1px;
+                display: none;
+            }
+            #web_function ul li {
+                width: 100px;
+                height: 75px;
+                background: rgba(220, 100, 10, 1);
+                float: none;
+                padding-top: 10px;
+            }
+            #web_function ul li p {
+                color: #fff;
+                font-size: 14px;
+                padding-top: 10px;
+                text-align: center;
+            }
+            #web_function li:hover ul {
+                display: block;
+            }
+            /* 网站功能结束 */
+        </style>
+    </head>
+    <body>
+        <!-- 顶部信息开始 -->
+        <div id="top">
+            <div id="logo"></div>
+            <div id="tele">
+                <p>客服电话：18670025984</p>
+                <img src="images/qr_code.jpg" alt="二维码" />
+            </div>
+        </div>
+        <!-- 顶部信息结束 -->
+
+        <!-- 导航开始 -->
+        <div id="nav">
+            <ul>
+                <li class="one"><a href="index.html" target="_self"><span>首页</span></a></li>
+                <li class="two"><a href="cy/about_us/about_us.html" target="_self"><span>关于我们</span></a></li>
+                <li class="three"><a href="jlj/case_center_one.html" target="_self"><span>案例中心</span></a></li>
+                <li class="four"><a href="cy/exhibition/exhibition_papg.html" target="_self"><span>产品展示</span></a></li>
+                <li class="five"><a href="wangyu/KnowledgeOfTuyere.html" target="_self"><span>风口知识</span></a></li>
+                <li class="six"><a href="wangyu/touch.html" target="_self"><span>联系我们</span></a></li>
+                
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <!-- 导航结束 -->
+
+        <!-- banner开始 -->
+        <div id="slideBox" class="slideBox">
+            <div class="hd">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li><a href="#" target="_self"><img src="images/banner1.jpg" alt=" " /></a></li>
+                    <li><a href="#" target="_self"><img src="images/banner2.jpg" alt=" " /></a></li>
+                    <li><a href="#" target="_self"><img src="images/banner3.jpg" alt=" " /></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- banner结束 -->
+
+        <!-- 内容开始 -->
+        <!-- 关于我们开始 -->
+        <div id="about1">
+            <div class="title"><img src="images/prodece_title.png" alt="关于我们" /></div>
+            <p>和璟艺术风口品牌标志由“H、E、J、1、L”六个英文字母组成象征着《Handiwork工艺》、</p>
+            <p>《Earnes认真》、《Jop工作》、《Innovation创造》、《Lifestly生活》</p>
+            <p> 精湛的工艺源于认真对待每个细节工作，不断创新才能赢得精彩生活。</p>
+            <img src="images/about_pic.png" alt="关于我们的形象图" class="pic" />
+            <div class="more"><a href="cy/about_us/about_us.html" target="_self">MORE</a></div>
+        </div>
+        <!-- 关于我们结束 -->
+        <div id="one"></div>
+        <!-- 最新产品开始 -->
+        <div id="about">
+            <div class="title"><img src="images/about_title.png" alt="最新产品" /></div>
+            <div id="produce">
+                <div id="produce1"><a href="#" target="_self"><img src="images/produce1.jpg" alt="最新产品" /></a></div>
+                <div id="center">
+                    <div id="produce2">
+                        <a href="#" target="_self"><img src="images/produce2.jpg" alt="最新产品" /></a>
+                        <a href="#" target="_self"><img src="images/produce3.jpg" alt="最新产品" /></a>
+                    </div>
+                    <div id="produce3"><a href="#" target="_self"><img src="images/produce4.jpg" alt="最新产品" /></a></div>
+                </div>
+                <div id="produce4"><a href="#" target="_self"><img src="images/produce5.jpg" alt="最新产品" /></a></div>
+            </div>
+            <div class="clear"></div>
+            <div class="more"><a href="#" target="_self"><p>MORE</p></a></div>
+        </div>
+        <!-- 最新产品结束 -->
+        <div id="two"></div>
+        <!-- 案例中心开始 -->
+        <div id="case_top">
+            <div id="case">
+                <div class="picMarquee-left">
+                    <div class="bdy">
+                        <ul class="picList">
+                            <li>
+                                <div class="title"><a href="jlj/advise.html" target="_self">空调风口的安全建议</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="jlj/advise1.html" target="_self">空调风口安装位置建议</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="jlj/advise2.html" target="_self">空调风口选用材用材质建议</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="wangyu/Tuyere.html" target="_self">空调风口的清理办法</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="wangyu/Tuyere.html" target="_self">空调风口注意事项</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="wangyu/Tuyere.html" target="_self">空调风口安装小技巧</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="cy/cl_page/fkcl_page1.html" target="_self">ABS材料性能的特点</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="cy/cl_page/fkcl_page2.html" target="_self">空调风口为什么广泛采用ABS材料</a></div>
+                            </li>
+                            <li>
+                                <div class="title"><a href="jlj/advise3.html" target="_self">保持室内通风的重要性</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="case1">
+             <div id="title"><img src="images/case_title.png" alt="最新产品" /></div>
+             <div id="case2">
+                 <div class="picMarquee-left">
+                     <div class="bdy">
+                         <ul class="picList">
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case1.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">方方满庭</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case2.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">繁花似锦</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case3.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">才华横溢</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case4.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">布林加西</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case5.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">铂金四方</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case6.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">光辉岁月</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case7.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">黑色线型</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case8.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">花开富贵</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case9.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">流水桃花</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case10.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">魅力无限</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case11.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">四海一家</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case12.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">祥云茉莉</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case13.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">行云流水</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case14.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">友谊国际</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case15.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">招财进宝</a></div>
+                             </li>
+                             <li>
+                                 <div class="pic"><a href="#" target="_self"><img src="images/case16.jpg" /></a></div>
+                                 <div class="title"><a href="#" target="_self">爪型风口</a></div>
+                             </li>
+                         </ul>
+                     </div>
+                     
+                 </div>
+             </div>
+             <div class="more"><a href="jlj/case_center_one.html" target="_self"><p>MORE</p></a></div>
+        </div>
+           
+        <!-- 案例中心结束 -->
+        <!-- 内容结束 -->
+
+        <!-- 底部内容开始 -->
+        <div id="footer">
+            <div id="footer_conter">
+                <div id="footer_left">
+                    <img src="images/footer_qr_code.jpg" alt="和璟公众号" />
+                    <p class="p">和璟公众号</p>
+                    <p class="p1">联系人:邓先生</p>
+                </div>
+                <div id="footer_right"><iframe src='https://surl.amap.com/5BWFY0E43sB'></iframe></div>
+                <div class="clear"></div>
+                <p class="p3"> 电话：18670025984</p>
+                <span>地址：连云港市灌云县杨集镇小乔圩村三组8号</span>
+                <p class="p4">湘公安备案号ICP123455</p>
+            </div>
+        </div>
+        <!-- 底部内容结束 -->
+
+        <!-- 网站功能开始 -->
+        <ul id="web_function">
+            <li>
+                <a href="" target="_blank"><img src="images/qq.jpg" alt="qq" title="点击这里可以解答你的疑问" /></a>
+            </li>
+            <li>
+                <a href="" target="_blank"><img src="images/tele.jpg" alt="电话" /></a>
+                <ul>
+                    <li>
+                        <p>电话咨询</p>
+                        <p>18670025984</p>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank"><img src="images/top.jpg" alt="电话" /></a></li>
+        </ul>
+        <!-- 网站功能结束 -->
+
+        <script>
+            jQuery(".slideBox").slide({
+                mainCell: ".bd ul",
+                autoPlay: true
+            });
+        </script>
+        
+        <script type="text/javascript">
+            jQuery(".picMarquee-left").slide({
+                mainCell: ".bdy ul",
+                autoPlay: true,
+                effect: "leftMarquee",
+                vis: 3,
+                interTime: 50
+            });
+        </script>
+
+    </body>
+</html>

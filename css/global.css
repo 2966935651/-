@@ -1,0 +1,27 @@
+body,a,p,img,ul,li,iframe{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 auto;
+}
+a {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+iframe{
+    frameborder:0;
+    scrolling:no;
+    marginheight:0; 
+    marginwidth:0;
+}
+.clear {
+    clear: both;
+}
